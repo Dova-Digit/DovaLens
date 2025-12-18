@@ -1,24 +1,40 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+
+# Python caches
 *.pyc
 *.pyo
 *.pyd
-
-# Virtual environment
-.venv/
-env/
-venv/
-
-# VSCode
-.vscode/
-
-# Data
-*.db
-*.sqlite
-*.pickle
 
 # Streamlit cache
 .streamlit/
 
 # Logs
 *.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files
+*.db
+*.sqlite
+*.pickle
+
+# Other
+.DS_Store
