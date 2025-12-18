@@ -1,0 +1,119 @@
+
+<html>
+<head>
+<title>DovaLens Automated Report</title>
+<style>
+body {
+    background:#0D0D0D; color:white; font-family: Arial;
+}
+h1, h2 {
+    color:#5AB0FF;
+}
+pre {
+    background:#111; padding:10px; border-radius:8px;
+}
+</style>
+</head>
+<body>
+<h1>DovaLens Automated Report</h1>
+
+<h2>Dataset Preview</h2>
+<pre>   Unnamed: 0  Age     Sex  Job Housing Saving accounts Checking account  Credit amount  Duration              Purpose
+0           0   67    male    2     own             NaN           little           1169         6             radio/TV
+1           1   22  female    2     own          little         moderate           5951        48             radio/TV
+2           2   49    male    1     own          little              NaN           2096        12            education
+3           3   45    male    2    free          little           little           7882        42  furniture/equipment
+4           4   53    male    2    free          little           little           4870        24                  car
+5           5   35    male    1    free             NaN              NaN           9055        36            education
+6           6   53    male    2     own      quite rich              NaN           2835        24  furniture/equipment
+7           7   35    male    3    rent          little         moderate           6948        36                  car
+8           8   61    male    1     own            rich              NaN           3059        12             radio/TV
+9           9   28    male    3     own          little         moderate           5234        30                  car</pre>
+
+<h2>Analysis Output</h2>
+<pre>{
+    "age_stats": {
+        "mean": 35.546,
+        "std": 11.375468574317512,
+        "min": 19.0,
+        "max": 75.0
+    },
+    "credit_stats": {
+        "mean": 3271.258,
+        "std": 2822.7368759604406,
+        "min": 250.0,
+        "max": 18424.0
+    },
+    "duration_stats": {
+        "mean": 20.903,
+        "std": 12.058814452756375,
+        "min": 4.0,
+        "max": 72.0
+    },
+    "dist_Sex": {
+        "male": 690,
+        "female": 310
+    },
+    "dist_Job": {
+        "2": 630,
+        "1": 200,
+        "3": 148,
+        "0": 22
+    },
+    "dist_Housing": {
+        "own": 713,
+        "rent": 179,
+        "free": 108
+    },
+    "dist_Saving accounts": {
+        "little": 603,
+        "nan": 183,
+        "moderate": 103,
+        "quite rich": 63,
+        "rich": 48
+    },
+    "dist_Checking account": {
+        "nan": 394,
+        "little": 274,
+        "moderate": 269,
+        "rich": 63
+    },
+    "dist_Purpose": {
+        "car": 337,
+        "radio/TV": 280,
+        "furniture/equipment": 181,
+        "business": 97,
+        "education": 59,
+        "repairs": 22,
+        "domestic appliances": 12,
+        "vacation/others": 12
+    },
+    "bimodality_age": 294.9511660661792,
+    "bimodality_job": 93.36927601494631,
+    "bimodality_credit amount": 681.236203197499,
+    "bimodality_duration": 167.47516467109836,
+    "drift_duration": {
+        "ks_stat": 0.102,
+        "p_value": 0.010968966298223139
+    },
+    "cluster_sizes": {
+        "1": 721,
+        "0": 220,
+        "2": 59
+    },
+    "anomalies": [
+        915,
+        756,
+        714,
+        637,
+        95,
+        438,
+        373,
+        374,
+        917,
+        236
+    ]
+}</pre>
+
+</body>
+</html>

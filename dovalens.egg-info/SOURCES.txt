@@ -1,0 +1,13 @@
+LICENCE
+setup.py
+dovalens/__init__.py
+dovalens/cli.py
+dovalens/core.py
+dovalens/report.py
+dovalens/utils.py
+dovalens.egg-info/PKG-INFO
+dovalens.egg-info/SOURCES.txt
+dovalens.egg-info/dependency_links.txt
+dovalens.egg-info/entry_points.txt
+dovalens.egg-info/requires.txt
+dovalens.egg-info/top_level.txt

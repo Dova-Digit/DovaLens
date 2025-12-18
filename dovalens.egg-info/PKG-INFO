@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: dovalens
+Version: 1.0.0
+Summary: Automated Dataset Profiler & Report Generator
+Author: Pietro Ferreri
+License-File: LICENCE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
