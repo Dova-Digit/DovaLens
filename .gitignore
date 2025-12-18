@@ -1,41 +1,23 @@
-# Byte-compiled / optimized / DLL files
+@"
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
-
-# Distribution / packaging
+*.egg-info/
 build/
 dist/
-*.egg-info/
 
-# Virtual environments
+# Virtual envs
+venv*/
 .venv/
-venv/
-env/
+.env/
 
-# IDEs
-.vscode/
-.idea/
+# Reports / artifacts
+*.html
 
-# Python caches
-*.pyc
-*.pyo
-*.pyd
+# Datasets: ignora tutti i CSV di examples tranne quello piccolo
+examples/*.csv
+!examples/german_credit_data.csv
 
-# Streamlit cache
-.streamlit/
-
-# Logs
-*.log
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Data files
-*.db
-*.sqlite
-*.pickle
-
-# Other
+# OS
 .DS_Store
-report.html
+"@ | Out-File -Encoding utf8 .gitignore
