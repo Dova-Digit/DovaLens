@@ -1,4 +1,4 @@
-# DovaLens – Automated Data Profiling & Drift Detection
+﻿# DovaLens â€“ Automated Data Profiling & Drift Detection
 
 [![GitHub Release](https://img.shields.io/github/v/release/Dova-Digit/DovaLens?display_name=tag&sort=semver)](https://github.com/Dova-Digit/DovaLens/releases/latest)
 [![PyPI version](https://img.shields.io/pypi/v/dovalens.svg)](https://pypi.org/project/dovalens/)
@@ -13,7 +13,7 @@ DovaLens is a command-line tool that turns a raw CSV into a clean, visual **HTML
 - **Bimodality checks** on numeric targets (Pearson's coefficient)
 - **Unsupervised clustering** (K-Means) for quick segmentation
 - **Anomaly detection** (Isolation Forest) on multivariate signals
-- **Drift signals** via two-sample **Kolmogorov–Smirnov** tests
+- **Drift signals** via two-sample **Kolmogorovâ€“Smirnov** tests
 - A single, shareable **report.html**
 
 > Built for fast EDA on small to very large CSV files.  
@@ -45,7 +45,7 @@ Works from any folder: pass either a relative path (.\examples\german_credit_dat
 ##CLI
 usage: dovalens [-h] [--output OUTPUT] input
 
-DovaLens — Automated dataset analyzer
+DovaLens â€” Automated dataset analyzer
 
 positional arguments:
   input            Input CSV file
@@ -116,18 +116,18 @@ CSV schema inference may need manual cleanup for exotic formats
 KS drift checks rely on meaningful grouping keys
 
 ##License
-MIT — see LICENSE [blocked].
+MIT â€” see LICENSE [blocked].
 
-## DovaLens – Profilazione automatica del dataset & Rilevamento del Drift (IT)
-#DovaLens è un tool da riga di comando che trasforma un CSV grezzo in un report HTML leggibile.
+## DovaLens â€“ Profilazione automatica del dataset & Rilevamento del Drift (IT)
+#DovaLens Ã¨ un tool da riga di comando che trasforma un CSV grezzo in un report HTML leggibile.
 
 Profilazione dataset (schema, anteprima, valori mancanti)
 Statistiche descrittive per feature numeriche e categoriche
 Distribuzioni (per stato/provincia/data, quando presenti)
-Controlli di bimodalità su target numerici (coeff. di Pearson)
+Controlli di bimodalitÃ  su target numerici (coeff. di Pearson)
 Clustering non supervisionato (K-Means) per segmentazioni rapide
 Rilevamento anomalie (Isolation Forest) su segnali multivariati
-Drift con test Kolmogorov–Smirnov a due campioni
+Drift con test Kolmogorovâ€“Smirnov a due campioni
 Un unico report.html condivisibile
 
 
@@ -145,7 +145,7 @@ dovalens path/al/tuo_dataset.csv
 # Output personalizzato
 dovalens path/al/tuo_dataset.csv --output path/al/report.html
 
-Se --output non è specificato, il report viene salvato come ./report.html nella cartella corrente.
+Se --output non Ã¨ specificato, il report viene salvato come ./report.html nella cartella corrente.
 
 Puoi usare un percorso relativo (.\examples\german_credit_data.csv) o assoluto.
 
@@ -153,25 +153,25 @@ Puoi usare un percorso relativo (.\examples\german_credit_data.csv) o assoluto.
 Anteprima dataset (head, dtypes, colonne categoriche inferite)
 Regole di pulizia (rimozione Unnamed:*, coercizione numerica)
 Distribuzioni dei campi principali (conteggi / istogrammi)
-Bimodalità per colonne numeriche selezionate
+BimodalitÃ  per colonne numeriche selezionate
 Correlazioni (Pearson)
 Clustering (K-Means, k scelto euristicamente)
 Anomalie con IsolationForest (outlier principali)
 Drift (test KS) su chiavi di raggruppamento quando presenti
 
 ##Come Funziona (Overview)
-Caricamento & pulizia → Profilazione → Segnali (distribuzioni, correlazioni, bimodalità) → Clustering (K-Means) → Anomalie (Isolation Forest) → Drift (KS) → report HTML unico.
+Caricamento & pulizia â†’ Profilazione â†’ Segnali (distribuzioni, correlazioni, bimodalitÃ ) â†’ Clustering (K-Means) â†’ Anomalie (Isolation Forest) â†’ Drift (KS) â†’ report HTML unico.
 
 ##Note di Performance
 Gestisce CSV molto grandi; in caso di limiti di memoria valuta:
 
-Macchina con più RAM
+Macchina con piÃ¹ RAM
 Selezione delle sole colonne utili
 Campionamento righe per una prima occhiata
 
 ##Limitazioni
-L'inferenza dello schema può richiedere fix manuali per formati atipici
+L'inferenza dello schema puÃ² richiedere fix manuali per formati atipici
 I controlli di drift richiedono chiavi di gruppo significative
 
 ##Licenza
-MIT — vedi LICENSE [blocked].
+MIT â€” vedi LICENSE [blocked].
