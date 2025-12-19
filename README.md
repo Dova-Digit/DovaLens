@@ -1,5 +1,6 @@
 # DovaLens – Automated Data Profiling & Drift Detection
 
+[![GitHub Release](https://img.shields.io/github/v/release/Dova-Digit/DovaLens?display_name=tag&sort=semver)](https://github.com/Dova-Digit/DovaLens/releases/latest)
 [![PyPI version](https://img.shields.io/pypi/v/dovalens.svg)](https://pypi.org/project/dovalens/)
 [![Python versions](https://img.shields.io/pypi/pyversions/dovalens.svg)](https://pypi.org/project/dovalens/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
