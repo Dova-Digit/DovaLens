@@ -1,3 +1,29 @@
 [build-system]
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "dovalens"
+version = "1.0.3"
+description = "Automated dataset analyzer and HTML report generator"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.9"
+authors = [{ name = "Pietro Ferreri" }]
+license = { file = "LICENSE" }
+
+dependencies = [
+  "pandas",
+  "numpy",
+  "scikit-learn",
+  "scipy"
+]
+
+[project.scripts]
+dovalens = "dovalens.cli:main"
+
+[project.urls]
+Homepage = "https://pypi.org/project/dovalens/"
+Source = "https://github.com/Dova-Digit/DovaLens"
+Issues = "https://github.com/Dova-Digit/DovaLens/issues"
+Changelog = "https://github.com/Dova-Digit/DovaLens/blob/main/CHANGELOG.md"
+
