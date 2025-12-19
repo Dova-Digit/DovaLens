@@ -1,0 +1,11 @@
+﻿name: Bug report
+description: Report a bug
+labels: bug
+body:
+  - type: textarea
+    id: what-happened
+    attributes: { label: What happened?, description: "Steps to reproduce" }
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes: { label: DovaLens version, placeholder: "e.g. 1.0.3" }
