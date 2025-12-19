@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dovalens"
-version = "1.0.3"
+version = "1.0.5"
 description = "Automated dataset analyzer and HTML report generator"
 readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.9"
