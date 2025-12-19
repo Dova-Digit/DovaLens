@@ -22,14 +22,18 @@ def clean_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """Standard cleaning — remove unnamed cols and convert numeric strings."""
     df = df.copy()
 
+    # Drop columns like 'Unnamed: 0'
     drop_cols = [c for c in df.columns if "unnamed" in c.lower()]
     df = df.drop(columns=drop_cols, errors="ignore")
 
+    # Convert numeric-looking values per-column WITHOUT using deprecated errors="ignore"
     for col in df.columns:
-        s = df[col].dropna().astype(str)
-        if len(s) == 0:
-            continue
-        if all(x.replace(".", "", 1).isdigit() for x in s):
-            df[col] = pd.to_numeric(df[col], errors="ignore")
+        s = df[col]
+        # prova la conversione numerica; i non convertibili diventano NaN
+        converted = pd.to_numeric(s, errors="coerce")
+
+        # sostituisci solo dove la conversione è riuscita
+        # (se è NaN, lascia il valore originale — stessa semantica di "ignore")
+        df[col] = s.where(converted.isna(), converted)
 
     return df
